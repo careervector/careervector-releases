@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "products": {
+    "careervector": {
+      "version": "0.0.1",
+      "source_revision": "f6789a13b05008894a43167c2b6c94e68235a0b1",
+      "package_revision": 1,
+      "artifacts": {
+        "x86_64-linux": {
+          "url": "https://github.com/julian-corbet/careervector-releases/releases/download/desktop-v0.0.1/careervector-0.0.1-linux-x86_64.tar.gz",
+          "sha256": "88b85252e406912a9c382ce6d245e46c669167d1547aa1bc8efea57aa8ad5cec",
+          "archive_root": "careervector",
+          "entrypoint": "careervector",
+          "license_directory": "share/licenses/careervector",
+          "minimum_glibc": "2.39",
+          "cpu_baseline": "x86-64",
+          "desktop_file": "share/applications/ch.corbet.careervector.desktop",
+          "icon": "share/icons/hicolor/256x256/apps/ch.corbet.careervector.png",
+          "native_evidence": {
+            "url": "https://github.com/julian-corbet/careervector-releases/releases/download/desktop-v0.0.1/careervector-0.0.1-linux-x86_64.native.json",
+            "sha256": "2a5a287afebf3261dd6e253a0dca8c4818dbd8ab380d0b42bba6cedb20392f25"
+          }
+        }
+      }
+    },
+    "careervector-tui": {
+      "version": "0.1.0-alpha.10",
+      "source_revision": "7ac83948549702b1905014aea5986336b76bf2fa",
+      "package_revision": 1,
+      "artifacts": {
+        "x86_64-linux": {
+          "url": "https://github.com/julian-corbet/careervector-releases/releases/download/tui-v0.1.0-alpha.10/careervector-0.1.0-alpha.10-linux-x86_64.tar.gz",
+          "sha256": "530c116b294840c090e03cc803e57200c3ef9385230d48d03936c770d3d0c74a",
+          "archive_root": "careervector-0.1.0-alpha.10-linux-x86_64",
+          "entrypoint": "bin/careervector",
+          "license_directory": "share/careervector/licenses/careervector",
+          "relink_directory": "share/careervector/relinking",
+          "minimum_glibc": "2.39",
+          "cpu_baseline": "x86-64",
+          "native_evidence": {
+            "url": "https://github.com/julian-corbet/careervector-releases/releases/download/tui-v0.1.0-alpha.10/careervector-0.1.0-alpha.10-linux-x86_64.native.json",
+            "sha256": "d5991779e7d4b452dccb01d3d4bef22322efe613c9acc2cede3d0cd2f2c66209"
+          }
+        }
+      }
+    }
+  }
+}
