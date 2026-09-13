@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "check": "Crow 6/181",
+  "check_source_commit": "129863e8139d7612be15569b7d4ae966044ec56d",
+  "installation_receipt_sha256": "b3440ff62fdf8081ce640d6e47878a7893ea5fca2ea4a89dc730ac49ea6d53c3",
+  "brew_version": "6.0.22",
+  "portable_ruby_version": "4.0.6",
+  "tap_commit": "e6d7e5c804a1bc7abfb5c46ed68f455e7edbe2a1",
+  "scope": "Linux x86-64 install/test, runtime linkage and command/desktop coexistence; GUI interaction and ordinary Homebrew Landlock behavior were not validated by this fixture",
+  "product_compilation": false,
+  "product_runtime_dependencies": {
+    "count": 191,
+    "all_poured_from_bottles": true
+  },
+  "test_harness": {
+    "bundler_version": "4.0.16",
+    "gemfile_lock_sha256": "2e1d51cc085514b838a411958adc91596161855da84f2f447dd7eb6b615b288d",
+    "bootstrap_log_sha256": "5dee4aef8c7ff9ec6ace7e3bf00b8db538745d1ef43a500cc85974cf13673f31",
+    "new_gems": [
+      {
+        "name": "drb",
+        "version": "2.2.3"
+      },
+      {
+        "name": "elftools",
+        "version": "2.0.0"
+      },
+      {
+        "name": "bindata",
+        "version": "3.0.0"
+      },
+      {
+        "name": "logger",
+        "version": "1.7.0"
+      },
+      {
+        "name": "concurrent-ruby",
+        "version": "1.3.8"
+      },
+      {
+        "name": "patchelf",
+        "version": "1.6.2"
+      },
+      {
+        "name": "minitest",
+        "version": "6.0.6"
+      },
+      {
+        "name": "plist",
+        "version": "3.7.2"
+      },
+      {
+        "name": "prism",
+        "version": "1.9.0"
+      },
+      {
+        "name": "ruby-macho",
+        "version": "6.0.0"
+      },
+      {
+        "name": "sorbet-runtime",
+        "version": "0.6.13454"
+      }
+    ],
+    "native_extension_compiled": {
+      "name": "prism",
+      "version": "1.9.0",
+      "compiler": "preinstalled fixture GCC",
+      "make_jobs": 3,
+      "gem_make_out_sha256": "6ae26eb0e66454a9ae1068b2896b9843bb08522c4637500fb0cdc90c56509436",
+      "mkmf_log_sha256": "c74ba44833a5b615603fbb19e85012a5a46755f9cfa6667f05c86f27bc3e7a5c"
+    }
+  },
+  "fixture_setting": {
+    "HOMEBREW_NO_SANDBOX_LINUX": "1",
+    "reason": "Homebrew Landlock rejected nice before setup hooks under proot; all16 failed hooks were replayed successfully before acceptance",
+    "server_security_configuration_changed": false
+  },
+  "brew_reported_version": "6.0.22-dirty",
+  "brew_source_materialization": {
+    "source_commit": "08e85c4e42f5d8f1ea17c36cb59cf61c2ccb26c3",
+    "only_tracked_difference": "Python tar data-filter normalized Library/Homebrew/vendor/gems/mechanize symlink target from mechanize-2.14.1/ to mechanize-2.14.1; it resolves to the same directory"
+  }
+}

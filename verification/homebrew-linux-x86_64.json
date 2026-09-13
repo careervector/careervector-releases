@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "packaging_source_commit": "129863e8139d7612be15569b7d4ae966044ec56d",
+  "inputs_archive_sha256": "b41c8a048064f04778bbc1b02f3f76928f5ed9f82537d0eaa5874b32751b0671",
+  "brew_version": "6.0.22",
+  "brew_commit": "08e85c4e42f5d8f1ea17c36cb59cf61c2ccb26c3",
+  "portable_ruby_version": "4.0.6",
+  "portable_ruby_sha256": "0980099dc2668dc47bd4c85b704beb76b9406b4a85f77fdda9820d8341b40f87",
+  "tap_commit": "e6d7e5c804a1bc7abfb5c46ed68f455e7edbe2a1",
+  "platform": "x86_64-linux",
+  "fixture_oci_sha256": "e78b3298fc011ed8ecf311c0a6ceef19f5f0954a58edb06e6a05f9225af7d8b8",
+  "prefix": "/home/linuxbrew/.linuxbrew",
+  "installed_dependency_count": 191,
+  "dependencies_poured_from_bottles": true,
+  "product_compilation": false,
+  "homebrew_landlock_disabled_inside_proot": true,
+  "sandbox_diagnostics": [
+    {
+      "source_commit": "aae64cd1b46006de8521a8404650ff0f4f500977",
+      "sha256": "9f287b50cb46ebb55cb9c2d29983cc6efe39553bcf00befea6d6d5ae72006656",
+      "error": "Errno::EACCES: Permission denied - nice"
+    }
+  ],
+  "recovered_postinstall_hooks": [
+    "dbus",
+    "ca-certificates",
+    "openssl@3",
+    "python@3.14",
+    "glib",
+    "fontconfig",
+    "shared-mime-info",
+    "gdk-pixbuf",
+    "gsettings-desktop-schemas",
+    "llvm",
+    "gtk+3",
+    "librsvg",
+    "gtk4",
+    "gnutls",
+    "glib-networking",
+    "sysprof"
+  ],
+  "postinstall_recovery_inputs": [
+    {
+      "source_commit": "2a78dcce7bf5d15f9f679a6ecac95972a2d016f3",
+      "sha256": "7bd947cd38868ba4c94fa9e73bb95e9146258d0cf83f327f1adb12cb96748e57"
+    }
+  ],
+  "postinstall_recovery_proof": {
+    "source_commit": "ce6980b85781a4a1ca9c33d35fb31edd063c53e9",
+    "steps_sha256": "306cf44518fefe9c314ab8060dab43c5ab6b88dad3fceb3e44a2b7aeae715aa2",
+    "log_sha256": "9e3b9345239259416d9b251098d086a535f8ad8005b145cdca61299dc9dc33c7"
+  },
+  "coinstallation_verified": true,
+  "versions": {
+    "careervector": "{\"event\": \"arch-runtime\", \"schema_version\": 1, \"archive_sha256\": \"e78b3298fc011ed8ecf311c0a6ceef19f5f0954a58edb06e6a05f9225af7d8b8\", \"manifest_digest\": \"sha256:49facfaf7eac45ed51ea3056091b8478191df5bcd62225e457e89c246b7cbda3\", \"config_digest\": \"sha256:0864f97b9567bf14c4450f820234617de489069d5157a3aef4a14a3e9bdf7508\", \"layer_digests\": [\"sha256:b7e1cd3f87e68f3ba6a40f5cc289faf651fd5df11d72caa35017ab5f2b92cfbf\", \"sha256:dabbe614f2f404de7042013c5dc04efd97161b93b6e635b3fff805c5f8791b74\"], \"platform\": \"linux/amd64\", \"identity\": \"builder\"}\nCareerVector 0.0.1\n",
+    "careervector-tui": "{\"event\": \"arch-runtime\", \"schema_version\": 1, \"archive_sha256\": \"e78b3298fc011ed8ecf311c0a6ceef19f5f0954a58edb06e6a05f9225af7d8b8\", \"manifest_digest\": \"sha256:49facfaf7eac45ed51ea3056091b8478191df5bcd62225e457e89c246b7cbda3\", \"config_digest\": \"sha256:0864f97b9567bf14c4450f820234617de489069d5157a3aef4a14a3e9bdf7508\", \"layer_digests\": [\"sha256:b7e1cd3f87e68f3ba6a40f5cc289faf651fd5df11d72caa35017ab5f2b92cfbf\", \"sha256:dabbe614f2f404de7042013c5dc04efd97161b93b6e635b3fff805c5f8791b74\"], \"platform\": \"linux/amd64\", \"identity\": \"builder\"}\nCareerVector 0.1.0-alpha.10\n"
+  },
+  "seconds": 85.157,
+  "steps": [
+    {
+      "step": "brew-source",
+      "command": [
+        "/nix/store/8yjpgadavqdwphcd2kw4dfvxmgdp5sb3-git-2.55.0/bin/git",
+        "-C",
+        "/home/linuxbrew/.linuxbrew/Homebrew",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "seconds": 0.268,
+      "log_sha256": "209d1455386b88a1859bffc2a8dca2551c73ad34933a4c397bbf994b3becce92"
+    },
+    {
+      "step": "brew-version",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/brew",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.406,
+      "log_sha256": "1163d75ba3752e98dc125e5fbf155f0cf9ebed65e39d6a7c1ba49e3f2e1644f8"
+    },
+    {
+      "step": "config",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/brew",
+        "config"
+      ],
+      "exit_code": 0,
+      "seconds": 1.823,
+      "log_sha256": "2549f90817df58960940737d3d879d49ad262fc720b794b2f3af38f0c24f2b42"
+    },
+    {
+      "step": "tap",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/brew",
+        "tap",
+        "corbet-labs/careervector",
+        "https://github.com/julian-corbet/homebrew-careervector"
+      ],
+      "exit_code": 0,
+      "seconds": 1.677,
+      "log_sha256": "ecb8034ecbcf508788eef8b95bed76c2293332ef5647ca2421f0a85ec0e1e346"
+    },
+    {
+      "step": "tap-source",
+      "command": [
+        "/nix/store/8yjpgadavqdwphcd2kw4dfvxmgdp5sb3-git-2.55.0/bin/git",
+        "-C",
+        "/home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/corbet-labs/homebrew-careervector",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "seconds": 0.234,
+      "log_sha256": "800b943786e1ec207e9b04b1ad6441ba5399d91dd368ab5b00eec3a5feefbe08"
+    },
+    {
+      "step": "tap-fetch",
+      "command": [
+        "/nix/store/8yjpgadavqdwphcd2kw4dfvxmgdp5sb3-git-2.55.0/bin/git",
+        "-C",
+        "/home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/corbet-labs/homebrew-careervector",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "e6d7e5c804a1bc7abfb5c46ed68f455e7edbe2a1"
+      ],
+      "exit_code": 0,
+      "seconds": 0.988,
+      "log_sha256": "d32e654778e9bc727da7795c2b53cea47def770facf8b5541415b86b0faa7845"
+    },
+    {
+      "step": "tap-checkout",
+      "command": [
+        "/nix/store/8yjpgadavqdwphcd2kw4dfvxmgdp5sb3-git-2.55.0/bin/git",
+        "-C",
+        "/home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/corbet-labs/homebrew-careervector",
+        "checkout",
+        "--detach",
+        "e6d7e5c804a1bc7abfb5c46ed68f455e7edbe2a1"
+      ],
+      "exit_code": 0,
+      "seconds": 0.294,
+      "log_sha256": "f1752b6e62fef86f9a19cf358ea322e0cae88255de71138a606c96875599b5ae"
+    },
+    {
+      "step": "tap-pinned-source",
+      "command": [
+        "/nix/store/8yjpgadavqdwphcd2kw4dfvxmgdp5sb3-git-2.55.0/bin/git",
+        "-C",
+        "/home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/corbet-labs/homebrew-careervector",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "seconds": 0.233,
+      "log_sha256": "e51f874fb06b55de06a17897e2c4f1df81aeb6529fea0a60a62f82b8573b8e4b"
+    },
+    {
+      "step": "fixture-nice",
+      "command": [
+        "/usr/bin/nice",
+        "/usr/bin/true"
+      ],
+      "exit_code": 0,
+      "seconds": 0.234,
+      "log_sha256": "ecb8034ecbcf508788eef8b95bed76c2293332ef5647ca2421f0a85ec0e1e346"
+    },
+    {
+      "step": "dependencies",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/brew",
+        "install",
+        "--force-bottle",
+        "patchelf",
+        "gtk+3",
+        "webkitgtk",
+        "glib",
+        "cairo",
+        "gdk-pixbuf",
+        "dbus",
+        "gtk4",
+        "libadwaita",
+        "openssl@3"
+      ],
+      "exit_code": 0,
+      "seconds": 1.882,
+      "log_sha256": "569576e4d8e800d6abe1c737576426ded146d60f216a13a391edb10cc5764ebe"
+    },
+    {
+      "step": "products",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/brew",
+        "install",
+        "corbet-labs/careervector/careervector",
+        "corbet-labs/careervector/careervector-tui"
+      ],
+      "exit_code": 0,
+      "seconds": 30.885,
+      "log_sha256": "df42617533cb9c2fd7d29f48fb348a64041ed3a106926d96c2ad4be57769960b"
+    },
+    {
+      "step": "test-careervector",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/brew",
+        "test",
+        "corbet-labs/careervector/careervector"
+      ],
+      "exit_code": 0,
+      "seconds": 33.2,
+      "log_sha256": "5dee4aef8c7ff9ec6ace7e3bf00b8db538745d1ef43a500cc85974cf13673f31"
+    },
+    {
+      "step": "test-careervector-tui",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/brew",
+        "test",
+        "corbet-labs/careervector/careervector-tui"
+      ],
+      "exit_code": 0,
+      "seconds": 7.237,
+      "log_sha256": "2b0118b8917dfc260f7fc1c811af47f91b4b6c709046d47a61c33c662fcee0f0"
+    },
+    {
+      "step": "installed",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/brew",
+        "info",
+        "--json=v2",
+        "--installed"
+      ],
+      "exit_code": 0,
+      "seconds": 3.231,
+      "log_sha256": "4ba8d53e1481884d147771538c8e02851edcbacd62ca81b955c6f44cfed024ea"
+    },
+    {
+      "step": "version-careervector",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/opt/careervector/libexec/careervector",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.66,
+      "log_sha256": "a74826dcdf552e017cd13b97524c9fbd34716cf23c7787da8ad20b239eea0ad9"
+    },
+    {
+      "step": "version-careervector-tui",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/bin/careervector",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.261,
+      "log_sha256": "63f93bbc5793768e1576cd68b71b30c2701e9c2247dcc2425bc3f72c3ddf8da5"
+    },
+    {
+      "step": "linkage-desktop",
+      "command": [
+        "/usr/bin/ldd",
+        "/home/linuxbrew/.linuxbrew/opt/careervector/libexec/careervector"
+      ],
+      "exit_code": 0,
+      "seconds": 0.558,
+      "log_sha256": "ab9c1dc79f40315b47dd1734683283e4f0df3d1212d1c064cf044cf097701488"
+    },
+    {
+      "step": "linkage-cterm",
+      "command": [
+        "/usr/bin/ldd",
+        "/home/linuxbrew/.linuxbrew/opt/careervector-tui/libexec/bin/cterm"
+      ],
+      "exit_code": 0,
+      "seconds": 0.388,
+      "log_sha256": "371196f25f3f0fc5f54182533075155eb133ed3a654059d1c1949e7ca09c6829"
+    },
+    {
+      "step": "cterm-version",
+      "command": [
+        "/home/linuxbrew/.linuxbrew/opt/careervector-tui/libexec/bin/cterm",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.41,
+      "log_sha256": "2cd5c3929a1d388a74987d5f730b3771c629febcbf90d1b2817b9b6f490a6a3f"
+    },
+    {
+      "step": "coexistence",
+      "command": [
+        "/usr/bin/bash",
+        "-eu",
+        "-c",
+        "\ntest \"$(command -v careervector)\" = \"/home/linuxbrew/.linuxbrew/bin/careervector\"\ntest -f \"/home/linuxbrew/.linuxbrew/opt/careervector-tui/libexec/bin/../share/careervector/relinking/source.tar.gz\"\ntest -f \"/home/linuxbrew/.linuxbrew/opt/careervector-tui/libexec/bin/../share/careervector/relinking/verification.json\"\ntest ! -e \"/home/linuxbrew/.linuxbrew/opt/careervector/bin/careervector\"\ngrep -Fx \"Exec=/home/linuxbrew/.linuxbrew/Cellar/careervector/0.0.1/libexec/careervector\" \"/home/linuxbrew/.linuxbrew/share/applications/ch.corbet.careervector.desktop\"\ngrep -Fx \"TryExec=/home/linuxbrew/.linuxbrew/Cellar/careervector/0.0.1/libexec/careervector\" \"/home/linuxbrew/.linuxbrew/share/applications/ch.corbet.careervector.desktop\"\n"
+      ],
+      "exit_code": 0,
+      "seconds": 0.24,
+      "log_sha256": "5a825631a2a3f6101881da78cf00b604d5cc8bfc0fb5aacd855f12c132373356"
+    }
+  ],
+  "scope": "real brew install and brew test, product runtime linkage, private desktop shortcut, TUI command and bundled relinking materials; graphical interaction is separate"
+}

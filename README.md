@@ -17,7 +17,7 @@ Native Linux x86-64 previews of both CareerVector products. Install both togethe
 | Homebrew tap | `brew tap corbet-labs/careervector https://github.com/julian-corbet/homebrew-careervector` |
 | Homebrew packages | `brew install corbet-labs/careervector/careervector corbet-labs/careervector/careervector-tui` |
 
-Homebrew formulas are experimental: Ruby syntax and the underlying native archives were checked; actual `brew install` has not been verified. Arch systems should use the native AUR packages. Linux archives require GLIBC 2.39 or newer; the recipes supply the additional GUI libraries. Nix uses its own runtime libraries.
+Both Linux Homebrew formulas passed real installation, `brew test`, runtime linkage and coinstallation checks. The [installation receipt](verification/homebrew-linux-x86_64.json) and [test runtime provenance](verification/homebrew-test-runtime.json) record the exact scope: the isolated proot test disabled Homebrew Landlock, successfully replayed affected setup hooks, and compiled one Ruby test-harness extension. No CareerVector native product was rebuilt; GUI interaction and normal Homebrew sandbox behavior were not tested in that lane. Arch systems should use the native AUR packages. Linux archives require GLIBC 2.39 or newer; the recipes supply the additional GUI libraries. Nix uses its own runtime libraries.
 
 [Desktop release](https://github.com/julian-corbet/careervector-releases/releases/tag/desktop-v0.0.1) · [TUI release](https://github.com/julian-corbet/careervector-releases/releases/tag/tui-v0.1.0-alpha.10)
 
